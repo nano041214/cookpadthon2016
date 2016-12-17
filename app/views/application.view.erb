@@ -1,0 +1,6 @@
+<% if current_user == nil %>
+    <%= link_to "ログイン", sessions_path %>
+<% else %>
+    <%= link_to 'ログアウト', session_path(current_user.id), :confirm => 'ログアウトしますか？', :method => :delete %>
+<% end %>
+<%= yield %>
