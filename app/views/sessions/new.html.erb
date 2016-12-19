@@ -3,8 +3,8 @@
     <p class="alert"><%= flash.alert %></p>
 <% end %>
 <%= form_tag sessions_path do %>
-    <div class="field"><%= label_tag :name, 'login name' %>
-      <%= text_field_tag :name, params[:name] %>
+    <div class="field"><%= label_tag :email, 'login email' %>
+      <%= text_field_tag :email, params[:email] %>
     </div>
     <div class="field"><%= label_tag :password, 'password' %>
       <%= password_field_tag :password, params[:password] %>
